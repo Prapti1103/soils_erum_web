@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="soil.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  
+  <!-- swiper link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="div1">
+        <div class="row bg-success">
+          <p class="text-center col-11  text-light pt-3" style="padding-left: 250px;">
+            You have purchased 390.00 of 750.00
+          </p>
+          <button id="close" type="button" class="btn-close col-1 my-3" aria-label="Close"></button>
+        </div>
+        <div class="progress mt-3" role="progressbar" aria-label="Success striped example" aria-valuenow="25"
+          aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 25%"></div>
+        </div>
+      </div>
+      <!-- div1 here -->
+
+      <div class="div2">
+        <div class="bg-success mt-3 text-light d-flex justify-content-around text-center">
+          <div class="contact pt-2">
+            <span class="mx-2"><i class="bi bi-telephone"></i> +91 9623847374</span>
+            <span class="mx-2"><i class="bi bi-envelope"></i> Soilserumz@gmail.com</span>
+          </div>
+          <div class="pt-2" style="padding-right: 150px;">
+            <p>Get the best products to your door steps today!</p>
+          </div>
+          <div class="icon pt-2">
+            <a href="#" class="mx-2"><i class="bi bi-facebook text-light"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-twitter text-light"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-instagram text-light"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- div2 here -->
+
+      <div class="div3 mt-3 d-flex justify-content-around w-100">
+        <div class="menuicon">
+          <i class="bi bi-list"></i>
+        </div>
+
+        <div class="image w-25">
+          <img src="./soilImage/logo-new.png" style="width: 55%" />
+        </div>
+
+        <div class="search mt-3">
+          <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="login d-flex mt-3">
+          <div class="register">LOGIN/REGISTER</div>
+          <div class="fevrate">
+            <i class="bi bi-heart ps-4 pe-4 position-relative fs-4">
+              <span class="position-absolute top-0 start-1 translate-middle badge rounded-pill bg-success">
+                2
+                <span class="visually-hidden">unread messages</span>
+              </span></i>
+          </div>
+          <div class="cart shopping p-0">
+            <button type="button" id="openCartSidebar" class="btn open-buttons  position-relative shopping  top-0 ">
+                <i class="bi bi-cart3 position-relative ">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success quantity">
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span></i>
+            </button>  
+          </div> 
+
+
+          <div id="offcanvasss" class="offcanvasss">
+            <button id="closeCartSidebar" class="btn close-button"><i class="bi bi-x-lg"></i></button>
+            <div class="d-flex justify-content-evenly">
+              <div class="border-end border-3 pe-3 ">My Cart <sup class="quantities">0 items</sup></div>
+              <div class="d-flex justify-content-around">
+                <div class="">
+                  <div>Saving</div>
+                  <div class="h5 totalsaving">&#8377;</div>
+                </div>
+                <div class="ms-4">
+                  <div>Card Total</div>
+                  <div class="h5 total">&#8377;</div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <ul class="listCard"></ul>
+            <p class="text-danger  border border-danger p-2">minimum order amount &#8377;500</p>
+            <button class="btn btn-outline-success px-3" style="margin-left: 35%;">Checkout</button>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- div3 here -->
+      <hr class="mt-3" style="height: 1px; width: 100%; background-color: grey" />
+    </header>
+    <!-- header here -->
+
+    <nav>
+      <div class="nav d-flex justify-content-around">
+        <div class="ul">
+          <li class="bg-success p-2" style="border-radius: 5px">
+            <a href="#" class="text-light" style="text-decoration: none"><i class="bi bi-list"></i>All Categoriea</a>
+          </li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Deal Of The Week</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li class="shop">
+            <a href="#"> Shop </a>
+            <ul class="dropdown">
+              <span>Body Care
+                <li><a href="#">Body Care Kits</a></li>
+                <li><a href="#">Body Wash & Soaps</a></li>
+                <li><a href="#">Wax/body packs</a></li>
+                <li><a href="#">Lotion & Scrubs</a></li>
+                <li><a href="#">Hair Care</a></li>
+              </span>
+
+              <span>Hair Care
+                <li><a href="#">Hair kit</a></li>
+                <li><a href="#">Hair Mask</a></li>
+                <li><a href="#">Hair oil & Serum</a></li>
+                <li><a href="#">Shampoo & Conditioner</a></li>
+                <li><a href="#">Skin Care</a></li>
+              </span>
+
+              <span>Skin Care
+                <li><a href="#">Creams & Gels</a></li>
+                <li><a href="#">Face Care Kits</a></li>
+                <li><a href="#">Shop By Concern</a></li>
+                <li><a href="#">Serum & Toner</a></li>
+                <li><a href="#">Skin Care</a></li>
+              </span>
+
+              <span>Shop By Concern
+                <li><a href="#">Hairfall & Baldness</a></li>
+                <li><a href="#">Pigmentation</a></li>
+                <li><a href="#">Pimples & Acne</a></li>
+                <li><a href="#">Rough Damaged Hair</a></li>
+                <li><a href="#">Skin & Body Lightening</a></li>
+              </span>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Store Location</a>
+          </li>
+          <li>
+            <a href="#">Product Reveiw</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </div>
+
+        <div>
+          <span>Customer Support<br /><i class="bi bi-telephone"></i> 962384737</span>
+        </div>
+      </div>
+    </nav>
+    <!-- nav here -->
+
+    <section class="sec1 p-2">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./soilImage/banner01.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./soilImage/banner02.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./soilImage/banner03.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item active">
+            <img src="./soilImage/banner04.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- sec1 here -->
+
+    <section class="sec2">
+      <h1 class="text-center my-5">Best Seller</h1>
+      <div class="star m-2 text-center">
+        <button class="bg-success text-light">
+          <i class="bi bi-star"></i> HAIR CARE
+        </button>
+        <button><i class="bi bi-star"></i> SKIN CARE</button>
+        <button class="hide"><i class="bi bi-star"></i> WEIGHT LOSS</button>
+      </div>
+    </section>
+    <!-- sec2 here -->
+
+    <section class="sec3">
+      <div class="swiper list">
+        <div class="swiper-wrapper boxss">
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- sec3 here -->
+
+
+    <section class="sec4 m-5 text-center">
+      <div class="btn-1">
+        <button class="bg-success text-light me-4 p-2 ps-3 pe-3">
+          <i class="bi bi-whatsapp"></i> Whatsapp
+        </button>
+        <button class="bg-success text-light me-4 p-2 ps-3 pe-3">
+          <i class="bi bi-instagram"></i> Instagram
+        </button>
+      </div>
+      <h1 class="m-4">Diwali Sale Offer!</h1>
+      <div class="btn-2">
+        <button class="bg-success text-light ps-4 pe-4">
+          <i class="bi bi-star"></i> SALE
+        </button>
+        <button class="hide"><i class="bi bi-star"></i> WEIGHT LOSS</button>
+      </div>
+      <div class="circle text-center pt-4">
+        <i class="bi bi-circle"></i>
+      </div>
+    </section>
+    <!-- sec4 here -->
+
+    <section class="sec5">
+      <h1 class="text-center pb-2">Shop By Concern</h1>
+      <p class="text-center">We Provide Problem Faced Solution</p>
+      <div class="text-center pt-4 pb-4 cmn-btn">
+        <button class="bg-success text-light ps-4 pe-4">HAIR CARE</button>
+        <button>FACE CARE</button>
+        <button class="hide">WEIGHT CARE</button>
+      </div>
+      <div class="all-img pt-5 pb-5">
+        <div class="cmn-img">
+          <img src="./soilImage/hair-fall-reasons-in-female_900-modified.png" class="w-100" />
+          <p>Hairfall & Baldness</p>
+        </div>
+        <div class="cmn-img">
+          <img src="./soilImage/pexels-element-digital-973401-modified.png" class="w-100" />
+          <p>Long Hair</p>
+        </div>
+        <div class="cmn-img">
+          <img src="./soilImage/hair-damage-hair-modified.png" class="w-100" />
+          <p>Damaged Hair</p>
+        </div>
+      </div>
+    </section>
+    <!-- sec5 here -->
+
+    <section class="sec6">
+      <h1 class="text-center pb-5">Testimonials</h1>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="boxs">
+              <div class="box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia assumenda eligendi itaque! Magnam possimus, incidunt
+                cupiditate expedita voluptate ipsum recusandae.
+              </div>
+              <div class="box box1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia assumenda eligendi itaque! Magnam possimus, incidunt
+                cupiditate expedita voluptate ipsum recusandae.
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="boxs">
+              <div class="box">
+                <i class="bi bi-paragraph text-success"></i>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia assumenda eligendi itaque! Magnam possimus, incidunt
+                cupiditate expedita voluptate ipsum recusandae.
+                <i class="bi bi-paragraph text-success"></i>
+              </div>
+              <div class="box box1">
+                <i class="bi bi-paragraph text-success"></i>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia assumenda eligendi itaque! Magnam possimus, incidunt
+                cupiditate expedita voluptate ipsum recusandae.
+                <i class="bi bi-paragraph text-success"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="me-5 bg-success carousel-control-prev-icon" aria-hidden="true"
+            style="border-radius: 50px"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="ms-5 bg-success carousel-control-next-icon" aria-hidden="true"
+            style="border-radius: 50px"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- sec6 here -->
+
+    <section class="sec7">
+      <!-- indicator slider -->
+      <div class="slider-parent">
+        <div class="slider-container">
+          <button class="btn arrow left-arrow" id="prevArrow">&lt;</button>
+          <div class="slider" id="slider">
+            <div class="slides">
+              <img src="./soilImage/01.png" />
+            </div>
+
+            <div class="slides">
+              <img src="./soilImage/02.png" />
+            </div>
+
+            <div class="slides">
+              <img src="./soilImage/03.png" />
+            </div>
+
+            <div class="slides">
+              <img src="./soilImage/04.png" />
+            </div>
+
+            <div class="slides">
+              <img src="./soilImage/05.png" />
+            </div>
+
+            <div class="slides">
+              <img src="./soilImage/06.png" />
+            </div>
+
+            <div class="slides">
+              <img src="./soilImage/07.png" />
+            </div>
+          </div>
+          <button class="btn arrow right-arrow" id="nextArrow">&gt;</button>
+        </div>
+      </div>
+    </section>
+    <!-- sec7 here -->
+
+    <hr class="mt-3" style="height: 1px; width: 100%; background-color: grey" />
+
+    <footer>
+      <div class="top-f">
+        <div class="div">
+          <img src="./soilImage/logo-new.png" class="f-img " />
+          <p>Kolhapur, Maharashtra 416003</p>
+          <div class="icon">
+            <a href="#"><i class=" bi-facebook text-light bg-dark p-2 rounded-circle"></i></a>
+            <a href="#"><i class=" bi-twitter text-light bg-dark p-2 rounded-circle"></i></a>
+            <a href="#"><i class=" bi-instagram text-light bg-dark p-2 rounded-circle"></i></a>
+          </div>
+        </div>
+
+        <div class="div">
+          <h6>NEED HELP</h6>
+          <p>9623847374</p>
+          <p>Soilserumz@gmail.com</p>
+        </div>
+
+        <div class="div">
+          <h6>INFORMATION</h6>
+          <li>Shipping Policy</li>
+          <li>Privacy Policy</li>
+          <li>Contact</li>
+          <li>About</li>
+        </div>
+
+        <div class="div">
+          <h6>ACCOUNT</h6>
+          <li>My account</li>
+          <li>Order Tracking</li>
+          <li>Checkout</li>
+          <li>Wishlist</li>
+        </div>
+
+      </div>
+
+      <hr class="mt-3" style="height: 1px; width: 100%; background-color: grey" />
+
+      <div class="btm-f">
+        <p>© 2024 Soil Serumz. Developed by @ WASCART Made with love.</p>
+        <div class="img">
+          <img src="./soilImage/payment.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer here -->
+  </div>
+  <!-- Content here -->
+
+  <!-- swiper ling -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="soil.js"></script>
+  <script src="jquery-3.7.1.js"></script>
+  
+</body>
+
+</html>
